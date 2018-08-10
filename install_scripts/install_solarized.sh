@@ -13,5 +13,6 @@ else
 fi
 
 echo "set background=dark" >> ~/.vimrc
-echo "let g:solarized_termcolors=256 \"comment this line out if not on mac" >> ~/.vimrc
+echo "set t_Co=16" >> ~/.vimrc
+echo "let g:solarized_termcolors=256 \"comment this line out theme looks weird" >> ~/.vimrc
 echo "colorscheme solarized" >> ~/.vimrc
