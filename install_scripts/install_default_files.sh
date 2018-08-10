@@ -13,9 +13,9 @@ cat default_configs/vimrc.txt >> ~/.vimrc
 
 # Tmux
 if [ ! -f ~/.tmux.conf ]; then
-    echo "\"Default Configuration (Added by Environment-Setup)" > ~/.tmux.conf
+    echo "# Default Configuration (Added by Environment-Setup)" > ~/.tmux.conf
 else
     echo "" >> ~/.tmux.conf
-    echo "\"Default Configuration (Added by Environment-Setup)" >> ~/.tmux.conf
+    echo "# Default Configuration (Added by Environment-Setup)" >> ~/.tmux.conf
 fi
 cat default_configs/tmux_conf.txt >> ~/.tmux.conf

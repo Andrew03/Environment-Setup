@@ -10,4 +10,4 @@ bind t new-window
 bind J previous-window
 bind K next-window
 
-setw -g mouse on
+set -g mouse on
