@@ -1,0 +1,37 @@
+set number
+syntax enable
+set showcmd
+"set cursorline
+set wildmenu
+set showmatch
+set ruler
+set nowrap
+set textwidth=0 wrapmargin=0
+set nolist
+set laststatus=2
+set visualbell
+set t_vb=n
+set cmdheight=2
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+set expandtab
+set autoindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set backspace=indent,eol,start
+set mouse=a
+
+set scrolloff=10
+set sidescrolloff=15
+set sidescroll=1
+
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
