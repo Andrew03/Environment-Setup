@@ -3,17 +3,19 @@
 # Installs vimrc and tmux.conf if files don't already exist
 
 # Vim
-fi [ ! -f ~/.vimrc ]; then
-    cp default_configs/vimrc.txt ~/.vimrc
+if [ ! -f ~/.vimrc ]; then
+    echo "\"Default Configuration (Added by Environment-Setup)" > ~/.vimrc
 else
-    echo "Added by Environment-Setup" >> ~/.vimrc
-    cat default_configs/vimrc.txt >> ~/.vimrc
+    echo "" >> ~/.vimrc
+    echo "\"Default Configuration (Added by Environment-Setup)" >> ~/.vimrc
 fi
+cat default_configs/vimrc.txt >> ~/.vimrc
 
-# tmux
+# Tmux
 if [ ! -f ~/.tmux.conf ]; then
-    cp default_configs/tmux_conf.txt ~/.tmux.conf
+    echo "\"Default Configuration (Added by Environment-Setup)" > ~/.tmux.conf
 else
-    echo "Added by Environment-Setup" >> ~/.tmux.conf
-    cat default_configs/tmux_conf.txt >> ~/.tmux.conf
+    echo "" >> ~/.tmux.conf
+    echo "\"Default Configuration (Added by Environment-Setup)" >> ~/.tmux.conf
 fi
+cat default_configs/tmux_conf.txt >> ~/.tmux.conf

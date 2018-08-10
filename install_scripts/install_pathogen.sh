@@ -5,9 +5,12 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 
 # Adding Pathogen to vimrc
 if [ ! -f ~/.vimrc ]; then
-    echo "execute pathogen#infect()" > ~/.vimrc
+    echo "\" For Pathogen (Added by Environment-Setup)" > ~/.vimrc
+    echo "execute pathogen#infect()" >> ~/.vimrc
 else
     cat ~/.vimrc > /tmp/old_vimrc
-    echo "execute pathogen#infect()" > ~/.vimrc
+    echo "\" For Pathogen (Added by Environment-Setup)" > ~/.vimrc
+    echo "execute pathogen#infect()" >> ~/.vimrc
+    echo "" >> ~/.vimrc
     cat /tmp/old_vimrc >> ~/.vimrc
 fi
