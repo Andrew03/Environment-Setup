@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installing Solarized
-git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
 # Adding Solarized to vimrc
 if [ ! -f ~/.vimrc ]; then

@@ -44,10 +44,10 @@ echo "set rtp+=${LOCATION}/powerline/bindings/vim" >> ~/.vimrc
 
 # Enable Powerline on Tmux
 if [ ! -f ~/.tmux.conf ]; then
-    echo "\" For Powerline (Added by Environment-Setup)" > ~/.tmux.conf
+    echo "# For Powerline (Added by Environment-Setup)" > ~/.tmux.conf
 else
     echo "" >> ~/.tmux.conf
-    echo "\" For Powerline (Added by Environment-Setup)" >> ~/.tmux.conf
+    echo "# For Powerline (Added by Environment-Setup)" >> ~/.tmux.conf
 fi
 echo "run-shell \"powerline-daemon -q\"" >> ~/.tmux.conf
 echo "source ${LOCATION}/powerline/bindings/tmux/powerline.conf" >> ~/.tmux.conf
