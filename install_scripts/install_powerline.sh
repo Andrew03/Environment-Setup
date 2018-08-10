@@ -4,6 +4,14 @@
 pip install powerline-status
 
 
+# Install Powerline Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+
 # Find Powerline Root Directory
 pip show powerline-status > /tmp/powerline_location.txt
 LOCATION_STRING=`sed '8q;d' /tmp/powerline_location.txt`
