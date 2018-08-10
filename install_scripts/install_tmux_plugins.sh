@@ -30,4 +30,4 @@ else:
     echo "" >> ~/.tmux.conf
     echo "# For Solarized on Tmux (Added by Environment-Setup)" >> ~/.bashrc
 fi
-echo "alis tmux='tmux -2'" >> ~/.bashrc
+echo "alias tmux='tmux -2'" >> ~/.bashrc
