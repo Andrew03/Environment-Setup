@@ -1,6 +1,7 @@
 # Environment-Setup
 
 ## What it Looks Like
+![Example](imgs/environment_screenshot.png)
 
 ## What's Getting Installed
 * [Powerline](https://powerline.readthedocs.io/en/master/), for showing cool `bash` prompts and `vim` footers
