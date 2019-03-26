@@ -14,7 +14,7 @@ rm -rf fonts
 
 # Find Powerline Root Directory
 pip show powerline-status > /tmp/powerline_location.txt
-LOCATION_STRING=`sed '8q;d' /tmp/powerline_location.txt`
+LOCATION_STRING="$(grep Location: /tmp/powerline_location.txt)"
 LOCATION_ARRAY=($LOCATION_STRING)
 LOCATION=${LOCATION_ARRAY[1]}
 
@@ -51,3 +51,9 @@ else
 fi
 echo "run-shell \"powerline-daemon -q\"" >> ~/.tmux.conf
 echo "source ${LOCATION}/powerline/bindings/tmux/powerline.conf" >> ~/.tmux.conf
+
+# Add Git to Powerline Prompt
+if [ ! -f ~/.config/powerline ]; then
+  mkdir ~/.config/powerline
+  cp default_configs/config.json ~/.config/powerline
+fi
