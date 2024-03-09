@@ -1,0 +1,12 @@
+# Git Aliases
+alias gs="git status"
+alias gb="git branch"
+alias gco="git checkout"
+alias gcom="git checkout master"
+alias gc="git commit"
+alias gss="git stash save"
+alias gd="git diff"
+alias ga="git add"
+alias gm="git merge"
+alias gmm="git merge master"
+alias gr="git rebase"
